@@ -3,12 +3,12 @@
 
 Column 1. subject
 * data type : Integer
-* subject identifier. unique identifier of the subject (volunteer within an age bracket of 19-48 years) who carried out the experiment. Total 30 fo them.
+* subject identifier. This is the unique identifier of the subject (volunteer within an age bracket of 19-48 years) who carried out the experiment. Total 30 subjects.
   * 1..30  
 
 Column 2. activity_name
 * data type : Factor
-* activity name
+* activity name. Total 6 activities.
   * LAYING
   * SITTING
   * STANDING
@@ -160,10 +160,11 @@ Note (B): For more details on the experiment and all raw measurements captured, 
   - y_test.txt, y_train.txt (activity labels performed corresponding to the feature vector readings for test (2947 records) and training (7352 records)) 
   - subject_test.txt, subject_train.txt (subjects performing the corresponding feature vectors for test (2947 records) and training (7352 records))
   - activity_labels.txt (label and name of the 6 activities)
-- For each set of test(3 files) and training(3 files) data, link up the subject, activity performed and all the feature readings to form one new data set.
+  - features.txt (names of the 561 feature vectors)
+- For each set of test(3 files) and training(3 files) data, link up the subject, activity performed and all the feature readings to form one new data set (2947 records/563 variables for test; 7352 records/563 variables for training).
 - Merge both the new test and training data sets into one big data set to achieve total 10299 records each with 564 variables. Call this new table ALLDATA.
 - Reference to the activity_labels.txt, match the activity name to the activity label of each of the 10299 records in ALLDATA.
-- Tidy up the ALLDATA table to remove activity label(not needed since included the activity name) and also to ensure the row order is preserved as per original data set for easy checking. Call this new table ALLDATA3.
+- Tidy up the ALLDATA table to remove activity label(not needed since included the activity name) and also to ensure the record order is preserved as per original data ALLDATA set for easy checking. Call this new table ALLDATA3.
 - Reference to the features.txt, identify the indices of all the variables that are measurements on mean() and std() related.
 - With the identified indices, two steps are done : 
 - (1) subset ALLDATA3 so that only those variable columns that are related to mean() and std() remain. Discard the rest. Call this new table ALLDATA4.
