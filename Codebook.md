@@ -1,29 +1,27 @@
 ##Code book for Module 3 Course Project
 ###Date Dictionary for data file name : M3Prjdata.txt
 
-1. subject
-  * data type : Integer
-  * subject identifier
-      1..30  unique identifier of the subject (volunteer within an age bracket of 19-48 years) who carried out the experiment. Total 30 fo them.
+Column 1. subject
+* data type : Integer
+* subject identifier. unique identifier of the subject (volunteer within an age bracket of 19-48 years) who carried out the experiment. Total 30 fo them.
+  * 1..30  
 
-2. activity_name
-  * data type : Factor
-  * activity name
-      LAYING
-      SITTING
-      STANDING
-      WALKING
-      WALKING_DOWNSTAIRS
-      WALKING_UPSTAIRS
+Column 2. activity_name
+* data type : Factor
+* activity name
+  * LAYING
+  * SITTING
+  * STANDING
+  * WALKING
+  * WALKING_DOWNSTAIRS
+  * WALKING_UPSTAIRS
 
-Note : 
-- 3rd column to 68th column are all of type Numeric.
-- Each is a mean or standard deviation measurement of the feature vector with time and frequency domain variables captured for each subject/activity group.
-- For more details on the experiment and all raw measurements captured, please refer to the [link] (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) :
+Note : 3rd column to 68th column are all of type Numeric. Each is a mean or standard deviation measurement of the feature vector with time and frequency domain variables captured for each subject/activity. group.
+For more details on the experiment and all raw measurements captured, please refer to the [link] (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) :
 
-3. tBodyAcc-mean()-X
-4. tBodyAcc-mean()-Y
-5. tBodyAcc-mean()-Z
+Column 3. tBodyAcc-mean()-X
+Column 4. tBodyAcc-mean()-Y
+Column 5. tBodyAcc-mean()-Z
 6. tBodyAcc-std()-X
 7. tBodyAcc-std()-Y
 8. tBodyAcc-std()-Z
