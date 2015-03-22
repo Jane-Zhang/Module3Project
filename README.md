@@ -8,7 +8,7 @@
 3. CodeBook.md - Codebook that describes the variables, the data and transformation performed to clean up the raw data sets.
 4. README.md - file that describes the submission.
 
-Note : Item 1 is NOT in the Github repository. However, it can be output by running the R script on the raw data sets. Items 2,3 and 4 are in the [Github repository](https://github.com/kminghui/Module3Project).
+Note : Item 1 is NOT in the Github repository. However, it can be output by running the R script (Item 2) on the raw data sets. Items 2,3 and 4 are in the Github repository.
 
 ###How the script works :
 
@@ -38,5 +38,4 @@ Note : Item 1 is NOT in the Github repository. However, it can be output by runn
 * Upload tidy set of data
   * Use tabs, suppress row names, file written to is called M3Prjdata.txt
   * File output using write.table(finaldata, "M3Prjdata.txt", sep="\t", row.names=FALSE).
-
-3. The output is a text file named M3Prjdata.txt ready for further analysis.
+  * The output is a text file named M3Prjdata.txt ready for further analysis.
