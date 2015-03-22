@@ -17,25 +17,32 @@ Note : Item 1 is NOT in the Github repository. However, it can be output by runn
 
 * Read in necessary files
 * Merge test and train data sets to create one data set
-  * For the test data set of files, form the subject, activity label and all feature readings into one data set called testok
-  * For the train data set of files, form the subject, activity label and all feature readings into one data set called trainok
-  * Combine testok and trainok to form one big data set called alldata
+  * For the test data set of files, form the subject, activity label and all feature readings into one data set called TESTOK.
+  * For the train data set of files, form the subject, activity label and all feature readings into one data set called TRAINOK.
+  * Combine testok and trainok to form one big data set called ALLDATA.
 * Use descriptive activity names to name the activities
   * Assign column headers to activity table
-  * To ensure the row order is preserved before and after the merge, create a temp variable which gives the row number of original alldata table. 
-  * Merge the data in alldata table and the activity table by key = activity label to form alldata1 table.
+  * To ensure the row order is preserved before and after the merge, create a temp variable which gives the row number of original ALLDATA table. 
+  * Merge the data in alldata table and the activity table by key = activity label to form ALLDATA1 table.
   * Reorder rows in alldata1 by the row number (temp_id) to get back the original order.
-  * Remove the temp_id and the activity label (not needed now since the activity name has been merged) from alldata1 table.
-  * Reorder the columns : subject, activity name, readings to form alldata3 table.
+  * Remove the temp_id and the activity label (not needed now since the activity name has been merged) from ALLDATA1 table.
+  * Reorder the columns : subject, activity name, readings to form ALLDATA3 table.
 * Extract only measurements on the mean and standard deviation for each measurement
-  * Find the indices of all features that have "mean()" and"std()" from the features.txt file
-  * Prepare the indices to be referenced in the alldata3 table by adding 2 to cater for subject and activity name.
-  * Using the identified indices, subset and extract only the measurements on the mean and standard deviation for each measurement into alldata4.
+  * Find the indices of all features that have "mean()" and "std()" from the features.txt file.
+  * Prepare the indices to be referenced in the ALLDATA3 table by adding 2 to cater for subject and activity name.
+  * Using the identified indices, subset and extract only the measurements on the mean and standard deviation for each measurement into ALLDATA4.
 * Assign the data set with descriptiive variable names
-  * Assign the corresponding variable names found in feature table to the respective column header in alldata4.Note that subject and activity have already been assigned earlier.
+  * Assign the corresponding variable names found in feature table to the respective column header in ALLDATA4. Note that subject and activity have already been assigned earlier.
 * Creates a second, independent tidy data set with average of each variable for each activity and subject
-  * Group alldata4 by subject and activity_name. Then compute the mean for each of the readings (columns). Final file is called finaldata.
+  * Group ALLDATA4 by subject and activity_name. Then compute the mean for each of the readings (columns). Final file is called FINALDATA.
 * Upload tidy set of data
-  * Use tabs, suppress row names, file written to is called M3Prjdata.txt
+  * Use tabs, suppress row names, file written to is called M3Prjdata.txt.
   * File output using write.table(finaldata, "M3Prjdata.txt", sep="\t", row.names=FALSE).
-  * The output is a text file named M3Prjdata.txt ready for further analysis.
+  * The output is a text file named M3Prjdata.txt ready for further analysis. It contains 180 records with 68 variables with column headers.
+
+Note : to read in the output text file back in R, use :
+data <- read.table("M3Prjdata.txt", header = TRUE)
+View(data)
+
+-End-
+ 
