@@ -20,7 +20,9 @@ Note : 3rd column to 68th column are all of type Numeric. Each is a mean or stan
 For more details on the experiment and all raw measurements captured, please refer to the [link] (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) :
 
 Column 3. tBodyAcc-mean()-X
+
 Column 4. tBodyAcc-mean()-Y
+
 Column 5. tBodyAcc-mean()-Z
 6. tBodyAcc-std()-X
 7. tBodyAcc-std()-Y
