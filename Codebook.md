@@ -16,7 +16,7 @@ Column 2. activity_name
   * WALKING_DOWNSTAIRS
   * WALKING_UPSTAIRS
 
-Note (A) : 3rd column to 68th column are all of type Numeric. Each is a mean or standard deviation measurement of the feature vector with time (column names that start with 't') and frequency (column names that start with 'f') domain variables captured for each subject/activity group.
+Note (A) : 3rd column to 68th column are all of data type Numeric. Each is a mean or standard deviation measurement of the feature vector with time (column names that start with 't') and frequency (column names that start with 'f') domain variables captured for each subject/activity group.
 
 Column 3. tBodyAcc-mean()-X
 
