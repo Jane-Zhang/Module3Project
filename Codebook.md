@@ -1,38 +1,45 @@
 ##Code book for Module 3 Course Project
 ###Date Dictionary for data file name : M3Prjdata.txt
 
-*1.	subject					Integer
-*		subject identifier
-*			1..30	unique identifier of the subject who carried out the experiment 
+1. subject
+  * data type : Integer
+  * subject identifier
+      1..30  unique identifier of the subject (volunteer within an age bracket of 19-48 years) who carried out the experiment. Total 30 fo them.
 
-*2.	activity_name				Factor
-*		activity name
-*			LAYING
-*			SITTING
-*			STANDING
-*			WALKING
-*			WALKING_DOWNSTAIRS
-*			WALKING_UPSTAIRS
+2. activity_name
+  * data type : Factor
+  * activity name
+      LAYING
+      SITTING
+      STANDING
+      WALKING
+      WALKING_DOWNSTAIRS
+      WALKING_UPSTAIRS
 
-*3. 	tBodyAcc-mean()-X			Number
-*4. 	tBodyAcc-mean()-Y			Number
-*5. 	tBodyAcc-mean()-Z			Number
-*6. 	tBodyAcc-std()-X			Number
-* tBodyAcc-std()-Y			Number
-* tBodyAcc-std()-Z			Number
-* tGravityAcc-mean()-X		Number
-* tGravityAcc-mean()-Y		Number
-* tGravityAcc-mean()-Z			Number
-* tGravityAcc-std()-X			Number		
-* tGravityAcc-std()-Y			Number
-* tGravityAcc-std()-Z			Number
-* tBodyAccJerk-mean()-X		Number
-* tBodyAccJerk-mean()-Y		Number
-* tBodyAccJerk-mean()-Z		Number
-* tBodyAccJerk-std()-X			Number
-* tBodyAccJerk-std()-Y			Number
-* tBodyAccJerk-std()-Z			Number
-* tBodyGyro-mean()-X			Number
+Note : 
+- 3rd column to 68th column are all of type Numeric.
+- Each is a mean or standard deviation measurement of the feature vector with time and frequency domain variables captured for each subject/activity group.
+- For more details on the experiment and all raw measurements captured, please refer to the [link] (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) :
+
+3. tBodyAcc-mean()-X
+4. tBodyAcc-mean()-Y
+5. tBodyAcc-mean()-Z
+6. tBodyAcc-std()-X
+7. tBodyAcc-std()-Y
+8. tBodyAcc-std()-Z
+9. tGravityAcc-mean()-X
+10.tGravityAcc-mean()-Y
+11.tGravityAcc-mean()-Z
+12.tGravityAcc-std()-X
+13.tGravityAcc-std()-Y
+14.tGravityAcc-std()-Z
+15.tBodyAccJerk-mean()-X
+16.tBodyAccJerk-mean()-Y
+17.tBodyAccJerk-mean()-Z
+18.tBodyAccJerk-std()-X
+19.tBodyAccJerk-std()-Y
+* tBodyAccJerk-std()-Z
+* tBodyGyro-mean()-X
 * tBodyGyro-mean()-Y			Number
 * tBodyGyro-mean()-Z			Number
 * tBodyGyro-std()-X			Number
