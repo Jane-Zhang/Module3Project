@@ -1,5 +1,5 @@
-# Module3Project
-##Module3 Course Project
+# Module 3 Project
+##README file for Module 3 Course Project
 
 ###The submission for Module 3 Course Project comprises the following :
 
